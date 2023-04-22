@@ -1,0 +1,39 @@
+/** MY STORE:
+Jackets (10)
+Jeans (10)
+Tops (5)
+Socks (5)
+Trousers (5)
+Sneakers (8)
+Phone Covers (5)
+Pajams (5)
+Hats (2)
+Underwear (5)
+Dresses (10)
+Jumpsuits (10) 
+Skirts (5)
+Short(5)
+Jewellery (5)
+**/
+
+---create a clohting store database
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, colour TEXT, season TEXT);
+
+INSERT INTO clothing VALUES (1, "Jackets", 10, "brown", "winter");
+INSERT INTO clothing VALUES (2, "Jeans", 10, "yellow", "winter");
+INSERT INTO clothing VALUES (3, "Tops", 5,"blue", "winter");
+INSERT INTO clothing VALUES (4, "Socks", 4, "blue", "winter");
+INSERT INTO clothing VALUES (5, "Trousers", 5, "red", "winter");
+INSERT into clothing VALUES (6, "Sneakers", 8, "blue", "winter");
+INSERT into clothing VALUES (7, "phone covers", 5, "blue", "winter");
+INSERT into clothing VALUES (8, "Pajamas", 5, "pink", "winter");
+INSERT into clothing VALUES (9, "Hats", 2, "blue", "winter");
+INSERT into clothing VALUES (10, "Underwear", 5, "white", "winter");
+INSERT into clothing VALUES (11, "Dresses", 10, "purple", "winter");
+INSERT into clothing VALUES (12, "Jumpsuits", 10, "yellow", "winter");
+INSERT into clothing VALUES (13, "Skirts", 5, "black", "winter");
+INSERT into clothing VALUES (14, "Shorts", 5, "grey", "winter");
+INSERT into clothing VALUES (15, "Jewellery", 5, "green", "winter");
+
+-- display the databas ordered by price. 
+SELECT * FROM clothing WHERE price ORDER BY price;
